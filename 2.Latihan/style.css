@@ -1,0 +1,206 @@
+/*ALL*/
+html, body {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/*------------------------------------------------------------------*/
+
+
+/*PRACTICE ONE | CONTAINER ONE*/
+.container-one {
+
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+.main-column {
+
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-one {
+
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-two {
+
+    flex: 1;
+    order: 3;
+}
+
+/*------------------------------------------------------------------*/
+
+/*PRACTICE TWO | CONTAINER TWO*/
+.container-two {
+
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.service {
+
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+
+.service.one {
+
+    background-color: purple;
+}
+
+.service.two {
+
+    background-color: darkcyan;
+}
+
+.service.three {
+
+    background-color: cornflowerblue;
+}
+
+/*------------------------------------------------------------------*/
+
+/*PRACTICE THREE | GALLERY*/
+.container-three {
+
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+
+    width: 50%;
+}
+
+.thumbnail img {
+
+    width: 100%;
+}
+
+/*------------------------------------------------------------------*/
+
+/*PRACTICE FOUR | CARD*/
+.container-four {
+
+    max-width: 800px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
+
+.card {
+
+    border: 1px solid rgb(87, 84, 84);
+    border-radius: 10px;
+    background-color: #f3f1f1;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card .header {
+
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content {
+
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.card.big {
+
+    transform: scale(1.13);
+}
+
+/*------------------------------------------------------------------*/
+
+/*PRACTICE FIVE | CENTERING*/
+.container-five {
+
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid #666;
+    display: flex;
+}
+
+.box {
+
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.box span {
+
+    margin: auto;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+/*RESPONSIVE*/
+@media( min-width:600px ) {
+
+    .container-two {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .service {
+
+        width: 30%;
+    }
+
+    .thumbnail {
+
+        width: 25%;
+    }
+
+    .container-four {
+
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/*------------------------------------------------------------------*/
+
